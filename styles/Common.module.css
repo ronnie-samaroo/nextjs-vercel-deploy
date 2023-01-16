@@ -1,0 +1,116 @@
+.section {
+  width: 100%;
+}
+
+.loginCard {
+    width: 60rem;
+    height: 42rem;
+    max-width: 100%;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    border-radius: var(--border-radius);
+    background: var(--color-white);
+    border: 0.1rem solid var(--color-grey-light-2);
+    border-radius: var(--border-radius-default);
+    box-shadow: 0 0.3rem 1rem var(--color-grey-light-2);
+    transition: all .2s ease-in-out;
+  }
+  
+  .loginCard img {
+    margin: 0 auto;
+  }
+  
+  .loginCard h1 {
+    margin: 1.5rem 0 0;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .loginCardLogo {
+    margin: 2rem 0 0;
+  }
+
+  .formWrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .formWrapper p {
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+  .loginForm {
+    margin: 1.5rem 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 0rem;
+  }
+
+  .formGroup {
+    margin: .2rem 0;
+  }
+
+  /* Form */
+  .defaultButton {
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: .8rem 3rem;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    overflow: visible;
+    border: 0;
+    color: var(--color-white);
+    background: var(--color-green);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.defaultButton:hover {
+    background-color: var(--color-green-dark);
+}
+
+.crFormCta {
+  margin: 0;
+  height: 35px;
+}
+/* Tabs */
+
+.tab {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tab:hover {
+  background: #f0f0f0;
+}
+
+.tab.selected {
+  border-color: #aaa;
+  border-width: 2px;
+  background: #fff;
+}
+
+.mainErr {
+  margin: 0;
+  color: var(--color-red);
+}

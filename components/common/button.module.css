@@ -1,0 +1,22 @@
+.btn {
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: .8rem 3rem;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    overflow: visible;
+    border: 0;
+    color: var(--color-white);
+    background: var(--color-green);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+    background-color: var(--color-green-dark);
+}

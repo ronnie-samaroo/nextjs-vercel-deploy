@@ -1,0 +1,13 @@
+{
+ "extends": "stylelint-config-standard",
+ "rules": {
+    "string-quotes": "single",
+    "number-leading-zero": "always",
+    "declaration-colon-newline-after": null,
+    "color-hex-length": "long",
+    "max-empty-lines": 4,
+    "value-list-comma-newline-after": null,
+    "max-nesting-depth": 3,
+    "indentation": 4
+  }
+}

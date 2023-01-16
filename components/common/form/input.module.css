@@ -1,0 +1,101 @@
+.container {
+    position: relative;
+    margin: 0.5rem auto;
+}
+
+.wrapper {
+    width: 30rem;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-width: 1px;
+	border-style: solid;
+	border-color: var(--color-grey);
+    border-radius: .5rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.wrapper:hover {
+  	border-color: var(--color-grey-50);
+}
+
+.wrapper:hover label {
+  	color: var(--color-grey-dark);
+}
+
+.wrapper:focus-within {
+	border-color: var(--color-green);
+}
+
+.error {
+	margin: 0;
+    padding: 0.1rem 0 0 .8rem;
+    font-size: 1rem !important;
+    font-weight: normal;
+    color: var(--color-red);
+    min-height: 14px;
+    height: 20px;
+}
+
+.styledError {
+	position: absolute;
+    right: 0.8rem;
+    top: 1rem;
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+}
+
+.input:valid ~ label {
+	transform: translate(0, -1rem) scale(0.8);
+}
+
+.input:focus ~ label {
+	transform: translate(0, -1rem) scale(0.8);
+	color: var(--color-green);
+}
+
+.label {
+	font-size: 1.2rem;
+    color: var(--color-grey);
+    padding: .5rem 1rem;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    transform-origin: top left;
+    transform: translate(0, 0.5rem) scale(1);
+    transition: all 0.25s ease-in-out;
+    background-color: white;
+}
+
+.input {
+	background: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: .5rem 1.2rem;
+	width: 100%;
+	margin: 0;
+    line-height: 2;
+    display: block;
+    border: none;
+    border-radius: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.input::placeholder {
+	opacity: 0;
+	transition: opacity 0.25s;
+	padding-left: 0.3rem;
+	font-weight: 500;
+}
+
+.input:focus {
+	outline: none;
+}
+
+.input:focus::placeholder {
+	opacity: 0.7;
+	color: var(--color-grey-50);
+}
+

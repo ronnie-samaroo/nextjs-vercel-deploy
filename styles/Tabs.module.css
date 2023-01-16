@@ -1,0 +1,121 @@
+.TabsContainer {
+    width: 100%;
+    margin: 0;
+}
+
+.TabsBlock {
+    display: flex;
+}
+
+.Tabs {
+    padding: 0.5rem 1rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 50%;
+    background: white;
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid var(--color-grey-light);
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+}
+
+.ActiveTabs {
+    background: white;
+    border: none;
+    border-bottom: 2px solid var(--color-green);
+    color: var(--color-green);
+    outline: none !important;
+}
+
+.ContentTabs {
+    flex-grow: 1;
+}
+
+.Content {
+    background: white;
+    padding: 2rem 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.Content h2 {
+    padding: 0px 0 5px 0px;
+}
+
+.Content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+}
+
+.Content p {
+    width: 100%;
+    height: 100%;
+}
+
+.ActiveContent {
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.location {
+    margin: 2rem 0;
+}
+
+.inputField {
+    text-align: center;
+}
+
+.crFormCta {
+    margin: 0 0 20px 0;
+    height: 35px;
+    text-align: right;
+}
+
+.defaultButton {
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    padding: 0.8rem 3rem;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    overflow: visible;
+    border: 0;
+    color: var(--color-white);
+    background: var(--color-green);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    height: 35px;
+}
+.defaultButton:hover {
+    background-color: var(--color-green-dark);
+}
+
+.form {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center
+}
+
+.form > div {
+    margin: 1rem;
+}
+
+.form > div > div > input {
+    height: 35px;
+}
+
+.form div:last-child {
+    margin-bottom: 30px;
+}
